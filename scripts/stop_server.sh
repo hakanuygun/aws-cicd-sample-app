@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl stop httpd
+pkill -f "python3 -m http.server"
