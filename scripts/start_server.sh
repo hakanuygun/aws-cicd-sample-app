@@ -1,3 +1,3 @@
 #!/bin/bash
-systemctl start httpd
-systemctl enable httpd
+cd /home/ec2-user/app
+nohup python3 -m http.server 80 &
