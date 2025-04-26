@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/ec2-user/app
-nohup python3 -m http.server 80 &
+systemctl daemon-reexec
+systemctl start httpd
+systemctl enable httpd
